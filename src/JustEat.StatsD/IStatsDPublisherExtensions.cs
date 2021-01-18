@@ -126,7 +126,9 @@ namespace JustEat.StatsD
             Dictionary<string, string?>? tags,
             params string[] buckets)
         {
+#pragma warning disable CA1508
             if (buckets == null || buckets.Length == 0)
+#pragma warning restore CA1508
             {
                 return;
             }
@@ -237,7 +239,9 @@ namespace JustEat.StatsD
             Dictionary<string, string?>? tags,
             params string[] buckets)
         {
+#pragma warning disable CA1508
             if (buckets == null || buckets.Length == 0)
+#pragma warning restore CA1508
             {
                 return;
             }

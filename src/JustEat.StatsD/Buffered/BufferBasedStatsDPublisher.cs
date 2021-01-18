@@ -15,7 +15,7 @@ namespace JustEat.StatsD.Buffered
 #pragma warning disable CA5394
         [ThreadStatic]
         private static Random? _random;
-        private static Random Random => _random ?? (_random = new Random());
+        private static Random Random => _random ??= new Random();
 #pragma warning disable CA5394
 
         private readonly StatsDUtf8Formatter _formatter;
